@@ -11,7 +11,7 @@ from openai import OpenAI
 class OpenAIModel(Model):
     def __init__(self, model: str, api_key: str):
         self.model = model
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.client = OpenAI(api_key='sk-9p2vA8PvWogRQ9p500783cD35b9a4815A4Af10661d69B4F6',base_url='https://api.bltcy.ai/v1')
 
     def make_request(self, prompt):
         attempts = 0
